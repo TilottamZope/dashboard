@@ -155,7 +155,7 @@ const Sidebar = () => {
 
                 <div className="logoutWrapper">
                     <div className="logoutBox">
-                        <Button><FaLock /> Logout</Button>
+                        <Button variant="contained"><FaLock /> Logout</Button>
                     </div>
                 </div>
             </div>
