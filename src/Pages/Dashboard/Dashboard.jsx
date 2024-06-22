@@ -9,8 +9,26 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { IoTimerOutline } from "react-icons/io5";
 import { Button } from '@mui/material';
+import { Chart } from "react-google-charts";
 
 const ITEM_HEIGHT = 48;
+
+export const data = [
+    ["Task", "Hours per Day"],
+    ["Work", 11],
+    ["Eat", 2],
+    ["Commute", 2],
+    ["Watch TV", 2],
+    ["Sleep", 7], // CSS-style declaration
+];
+
+export const options = {
+  'backgroundColor': 'transparent',
+  'chartArea': { 'width': '100%', 'height': '100%' },
+  // 'color': 'white',
+  
+
+};
 
 const Dashboard = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -71,6 +89,16 @@ const Dashboard = () => {
                 </div>
 
               </div>
+              <h3 className='text-white align-items-center w-100 bottomEle'>Rs.100,000.99</h3>
+              <p>Rs.90,000.90 in Last Month</p>
+
+              <Chart
+                chartType="PieChart"
+                width="100%"
+                height="178px"
+                data={data}
+                options={options}
+              />
 
             </div>
           </div>

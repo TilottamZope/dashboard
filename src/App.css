@@ -595,3 +595,9 @@ main .sidebarWrapper .sidebar ul li button * {
     font-size: 16px;
     font-weight: 600;
 }
+
+.graphBox p {
+    font-size: 13px;
+    color: #fff;
+    opacity: 0.7;
+}
