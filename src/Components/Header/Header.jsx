@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../../Assets/Images/Logo.png'
 import { Button, Divider } from '@mui/material'
@@ -19,9 +19,13 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import PersonAdd from '@mui/icons-material/PersonAdd';
 import { GrPowerReset } from "react-icons/gr";
 import Logout from '@mui/icons-material/Logout';
+import { MyContext } from '../../App';
 
 
 const Header = () => {
+
+    const context = useContext(MyContext)
+
     const [anchorEl, setAnchorEl] = useState(null);
     const [isOpennotificationDrop, setisOpennotificationDrop] = useState(false);
     const openMyAcc = Boolean(anchorEl);
@@ -50,7 +54,12 @@ const Header = () => {
                             <Link to={'/'}><img src={Logo} alt="Logo Not Found" className='logo' /></Link>
                         </div>
                         <div className="col-sm-3 d-flex align-items-center part2">
-                            <Button className='rounded-circle me-3'><MdMenuOpen /></Button>
+                            <Button className='rounded-circle me-3' onClick={() => context.setIsToggleSidebar(!context.isToggleSidebar)}>
+                                {
+                                    context.isToggleSidebar === false ? < MdMenuOpen /> : <MdOutlineMenu />
+                                }
+
+                            </Button>
                             <Searchbox />
                         </div>
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
@@ -76,127 +85,127 @@ const Header = () => {
 
                                     <Divider className='mb-1' />
                                     <div className="scroll">
-                                    <MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        <MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
-                                        <div className="d-flex ">
-                                            <div>
-                                                <div className="userImg">
-                                                    <span className="rounded-circle">
-                                                        <img src={Profile} alt="Profile Not Found" />
-                                                    </span>
+                                        </MenuItem><MenuItem onClick={handleCloseMyAccDrop}>
+                                            <div className="d-flex ">
+                                                <div>
+                                                    <div className="userImg">
+                                                        <span className="rounded-circle">
+                                                            <img src={Profile} alt="Profile Not Found" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div className="dropdownInfo">
+                                                    <h4>
+                                                        <span>
+                                                            <b>Tilottam Zope</b>
+                                                            added to his favorite list
+                                                            <b> Lather Belt steve madden</b>
+                                                        </span>
+                                                    </h4>
+                                                    <p className='text-sky mb-0'>few seconds ago</p>
                                                 </div>
                                             </div>
-                                            <div className="dropdownInfo">
-                                                <h4>
-                                                    <span>
-                                                        <b>Tilottam Zope</b>
-                                                        added to his favorite list  
-                                                        <b> Lather Belt steve madden</b>
-                                                    </span>
-                                                </h4>
-                                                <p className='text-sky mb-0'>few seconds ago</p>
-                                            </div>
-                                        </div>
-                                    </MenuItem>
+                                        </MenuItem>
                                     </div>
                                     <div className="ps-3 pe-3  pt-2 pb-1">
                                         <Button className='btn-blue w-100'>View all notifinations</Button>

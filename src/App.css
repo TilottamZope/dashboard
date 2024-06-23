@@ -10,6 +10,7 @@
 body {
     font-family: "Open Sans", sans-serif !important;
     background: #ebe9e9 !important;
+    overflow-x: hidden;
 
 }
 
@@ -244,10 +245,14 @@ header button.rounded-circle:hover svg {
     transition: all 0.3s;
 }
 
-/* .main .sidebarWrapper.toggle {
+.main .sidebarWrapper.toggle {
     width: 0%;
     flex: 0 0 0%;
-} */
+}
+
+.main .sidebarWrapper.toggle .sidebar {
+    left: -100%;
+}
 
 .main .sidebarWrapper .sidebar {
     width: 20%;
@@ -260,7 +265,7 @@ header button.rounded-circle:hover svg {
     overflow-y: scroll;
     overflow-x: hidden;
     padding-bottom: 40px;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 .main .sidebarWrapper .sidebar ul {
@@ -460,17 +465,17 @@ main .sidebarWrapper .sidebar ul li button * {
 .main .content {
     width: 80%;
     flex: 0 0 80%;
-    /* transition: all 0.3s; */
+    transition: all 0.3s ease-in-out;
 }
 
-/* .main .content.toggle {
+.main .content.toggle {
     width: 100%;
     flex: 0 0 100%;
-} */
+}
 
 .right-content {
     padding: 90px 30px;
-    /* padding-bottom: 10px; */
+    padding-bottom: 10px;
 }
 
 /* .dashboard_Box .dashboardBox {
