@@ -212,47 +212,53 @@ const Header = () => {
                                     </div>
                                 </Menu>
                             </div>
-                            <div className="myAccWrraper">
-                                <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
-                                    <div className="userImg">
-                                        <span className="rounded-circle">
-                                            <img src={Profile} alt="Profile Not Found" />
-                                        </span>
+
+                            {
+                                context.isLogin !== true ? <Link to="/login"><Button className='btn-blue btn-lg btn-round'>Sign In</Button></Link> :
+                                    <div className="myAccWrraper">
+                                        <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
+                                            <div className="userImg">
+                                                <span className="rounded-circle">
+                                                    <img src={Profile} alt="Profile Not Found" />
+                                                </span>
+                                            </div>
+                                            <div className="userInfo">
+                                                <h4>Tilottam Zope</h4>
+                                                <p className='mb-0'>@tilottam21</p>
+                                            </div>
+                                        </Button>
+                                        <Menu
+                                            anchorEl={anchorEl}
+                                            id="account-menu"
+                                            open={openMyAcc}
+                                            onClose={handleCloseMyAccDrop}
+                                            onClick={handleCloseMyAccDrop}
+                                            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                                            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                                        >
+                                            <MenuItem onClick={handleCloseMyAccDrop}>
+                                                <ListItemIcon>
+                                                    <PersonAdd fontSize="small" />
+                                                </ListItemIcon>
+                                                My Account
+                                            </MenuItem>
+                                            <MenuItem onClick={handleCloseMyAccDrop}>
+                                                <ListItemIcon>
+                                                    <GrPowerReset />
+                                                </ListItemIcon>
+                                                Reset Password
+                                            </MenuItem>
+                                            <MenuItem onClick={handleCloseMyAccDrop}>
+                                                <ListItemIcon>
+                                                    <Logout fontSize="small" />
+                                                </ListItemIcon>
+                                                Logout
+                                            </MenuItem>
+                                        </Menu>
                                     </div>
-                                    <div className="userInfo">
-                                        <h4>Tilottam Zope</h4>
-                                        <p className='mb-0'>@tilottam21</p>
-                                    </div>
-                                </Button>
-                                <Menu
-                                    anchorEl={anchorEl}
-                                    id="account-menu"
-                                    open={openMyAcc}
-                                    onClose={handleCloseMyAccDrop}
-                                    onClick={handleCloseMyAccDrop}
-                                    transformOrigin={{ horizontal: 'right', vertical: 'top' }}
-                                    anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
-                                >
-                                    <MenuItem onClick={handleCloseMyAccDrop}>
-                                        <ListItemIcon>
-                                            <PersonAdd fontSize="small" />
-                                        </ListItemIcon>
-                                        My Account
-                                    </MenuItem>
-                                    <MenuItem onClick={handleCloseMyAccDrop}>
-                                        <ListItemIcon>
-                                            <GrPowerReset />
-                                        </ListItemIcon>
-                                        Reset Password
-                                    </MenuItem>
-                                    <MenuItem onClick={handleCloseMyAccDrop}>
-                                        <ListItemIcon>
-                                            <Logout fontSize="small" />
-                                        </ListItemIcon>
-                                        Logout
-                                    </MenuItem>
-                                </Menu>
-                            </div>
+                            }
+
+
                         </div>
 
                     </div>

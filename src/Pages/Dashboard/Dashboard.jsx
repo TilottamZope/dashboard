@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import DashboardBox from './Components/DashboardBox'
 import { FaUserCircle } from "react-icons/fa";
 import { IoMdCart } from "react-icons/io";
@@ -17,6 +17,7 @@ import { FaEye } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import Pagination from '@mui/material/Pagination';
+import { MyContext } from '../../App';
 
 const ITEM_HEIGHT = 48;
 
@@ -37,6 +38,12 @@ export const options = {
 };
 
 const Dashboard = () => {
+  const context = useContext(MyContext)
+
+  useEffect(()=>{
+    context.setIsHideSidebarAndHeader(false)
+  },[])
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [showBy, setShowBy] = React.useState('');
   const [showCatBy, setShowCatBy] = React.useState('');
