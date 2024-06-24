@@ -26,6 +26,8 @@ const Signup = () => {
 
     useEffect(() => {
         context.setIsHideSidebarAndHeader(true)
+        window.scrollTo(0,0)
+
     }, [])
 
     const focusInput = (index) => {
@@ -55,7 +57,7 @@ const Signup = () => {
                                 <form action="#">
                                     <div className={`form-group position-relative ${inputIndex === 0 && 'focus'}`}>
                                         <span className='icon'><FaUserCircle /></span>
-                                        <input type="text" placeholder='enter your name' className='form-control' onFocus={() => focusInput(0)} onBlur={() => setInputIndex(null)} />
+                                        <input type="text" placeholder='enter your name' className='form-control' onFocus={() => focusInput(0)} onBlur={() => setInputIndex(null)} autoFocus/>
                                     </div>
                                     <div className={`form-group position-relative ${inputIndex === 1 && 'focus'}`}>
                                         <span className='icon'><IoMdMail /></span>
@@ -73,7 +75,7 @@ const Signup = () => {
                                     </div>
                                     <div className={`form-group position-relative ${inputIndex === 3 && 'focus'}`}>
                                         <span className='icon'><IoShieldCheckmarkSharp /></span>
-                                        <input type={`${isShowConformPassword === true ? 'text' : 'password'}`} placeholder='enter your password' className='form-control' onFocus={() => focusInput()} onBlur={() => setInputIndex(null)} />
+                                        <input type={`${isShowConformPassword === true ? 'text' : 'password'}`} placeholder='conform your password' className='form-control' onFocus={() => focusInput()} onBlur={() => setInputIndex(null)} />
 
                                         <span className='toggleShowPassword' onClick={() => setIsShowConformPassword(!isShowConformPassword)}>
                                             {

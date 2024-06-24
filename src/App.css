@@ -14,7 +14,7 @@ body {
 
 }
 
-header {
+ header {
     width: 100%;
     height: 70px;
     background: rgba(255, 255, 255, 0.9);
@@ -502,9 +502,9 @@ main .sidebarWrapper .sidebar ul li button * {
     padding-bottom: 10px;
 }
 
-/* .dashboard_Box .dashboardBox {
+.dashboard_Box .dashboardBox {
     width: 48% !important;
-} */
+}
 
 .dashboardBoxWrapper {
     gap: 20px;
@@ -653,12 +653,7 @@ main .sidebarWrapper .sidebar ul li button * {
     font-size: 14px !important;
 }
 
-.table .thead-dark th {
-    background-color: #1866ee !important;
-    color: white;
-    border-color: rgba(255, 255, 255, 0.2) !important;
-    font-size: 13px !important;
-}
+.table .thead-dark th{background-color: #1866ee !important; border-color: rgba(255,255,255,0.1) !important; font-size: 13px !important;}
 
 .table tbody td {
     font-size: 14px !important;
@@ -775,10 +770,6 @@ table td .imgWrapper .card {
     margin-bottom: 0px;
 }
 
-.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-    background-color: #0858f7 !important;
-}
-
 .loginsection {
     width: 100%;
     height: 100vh;
@@ -869,8 +860,8 @@ table td .imgWrapper .card {
     font-weight: 800;
 }
 
-/* body.dark{color: rgba(255,255,255,0.7);}
-body.dark .link{color: rgba(255,255,255,0.6) ;} */
+body.dark{color: rgba(255,255,255,0.7);}
+body.dark .link{color: rgba(255,255,255,0.6) ;}
 
 .link:hover {
     color: #0858f7 !important;
@@ -935,31 +926,127 @@ body.dark .loginSection .loginBox .wrapper .or span.txt {
     padding-top: 10px !important;
 }
 
-.signUpSection .part1 {
-    padding-left: 100px;
-    padding-right: 100px;
-}
+.signUpSection .part1 { padding-left: 100px; padding-right: 100px;}
 
-.signUpSection .part1 h3 {
-    font-size: 50px;
-    font-weight: 800;
-}
+.signUpSection .part1 h3 {font-size: 50px; font-weight: 800;}
 
-.signUpSection .part1 h3 span {
-    font-weight: 800 !important;
-}
+.signUpSection .part1 h3 span {font-weight: 800 !important;}
 
-.signUpSection .part1 p {
-    font-size: 18px;
-    font-weight: 500;
-}
+.signUpSection .part1 p {font-size: 18px; font-weight: 500;}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    color: #201f2f;
+h1, h2, h3, h4, h5, h6, p {color: #201f2f;}
+
+
+.breadcrumbs_  a:hover{text-decoration: none !important;}
+body.dark .breadcrumbs_  a{background-color: #112143 !important;}
+body.dark .breadcrumbs_  a *{color: rgba(255,255,255,0.7) !important;}
+body.dark .breadcrumbs_  li .MuiChip-filled{background-color: #112143 !important; color: rgba(255,255,255,0.7) !important;}
+
+body.dark .css-1wuw8dw-MuiBreadcrumbs-separator{background-color: #112143 !important; color: rgba(255,255,255,0.7) !important;}
+
+/* *****************************************************Dark Mode Section***************************************************** */
+body.dark{background: #071739 !important;}
+
+.topLoadingBar{height: 4px !important;background: #1866ee  !important;}
+
+body.dark .topLoadingBar{background: #ff4964   !important;}
+
+body.dark{color: rgba(255,255,255,0.7);}
+body.dark .link{color: rgba(255,255,255,0.6) ;}
+
+body.dark header{background: #112143 !important;}
+
+body.dark header .logo span{color: #fff !important; opacity: 0.9;}
+
+body.dark header button.rounded-circle{background:#112755 !important ;}
+body.dark header button.rounded-circle svg{color: #fff !important;}
+
+body.dark .searchBox{background: #12254e;}
+
+body.dark .searchBox input,body.dark .searchBox input::-webkit-input-placeholder,body.dark .searchBox svg{color:rgba(255,255,255,0.7) ;}
+
+body.dark .myAcc .userInfo *{color: rgba(255,255,255,0.8) !important;}
+body.dark .MuiPaper-root-MuiDialog-paper{background-color: #12254e !important;}
+body.dark .MuiPaper-elevation li *,body.dark .MuiPaper-elevation li{color: rgba(255,255,255,0.8) !important;}
+
+body.dark .MuiPaper-elevation{background-color: #12254e !important;}
+
+body.dark .dropdown_list .head h4{color: rgba(255,255,255,0.9) !important;}
+body.dark .dropdown_list li.MuiButtonBase-root{background-color: #12254e !important; background: #12254e !important;}
+
+body.dark .main .sidebarWrapper .sidebar{background: #112143 !important;}
+
+body.dark .main .sidebarWrapper .sidebar ul li button{color: rgba(255,255,255,0.8) !important;}
+
+body.dark .main .sidebarWrapper .sidebar ul li button:hover{background: rgba(255,255,255,0.1) !important;}
+
+body.dark .main .sidebarWrapper .sidebar ul li button.active{background: rgba(255,255,255,0.1) !important;}
+
+body.dark .main .sidebarWrapper .sidebar ul .submenu::before{background: rgba(255,255,255,0.2);}
+
+body.dark .main .sidebarWrapper .sidebar ul .submenu li a{color: rgba(255,255,255,0.7) !important;}
+
+body.dark .main .sidebarWrapper .sidebar ul .submenu li a:hover{color: #0858f7 !important;}
+
+body.dark .logoutWrapper .logoutBox{ background: transparent; background-image: linear-gradient(#183e8c, #163474);}
+
+body.dark .card{background: #1b2b4d !important; border: 1px solid #10214b !important;}
+body.dark .card .hd{font-size: 18px; font-weight: bold; color: rgba(255,255,255,0.8);} 
+body.dark .cardFilters .col-md-3 h4{color: rgba(255,255,255,0.8);}
+
+body.dark .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root, body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p, body.dark .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon, body.dark .css-bpeome-MuiSvgIcon-root-MuiSelect-icon{color:rgba(255,255,255,0.8) !important;}
+
+body.light p{font-weight: 400 !important;}
+
+body.dark .css-1d3z3hw-MuiOutlinedInput-notchedOutline{border-color: rgba(255,255,255,0.3) !important;}
+
+body.dark .table-striped tbody tr:nth-of-type(odd){background: rgba(0,0,0,0.2) !important;}
+
+body.dark .table > :not(caption) > * > * {background-color: #10214b;}
+
+body.dark .table .thead-dark th{color: #fff;}
+
+
+body.dark .table tbody .actions button.secondary{background-color: #de2fff !important;}
+body.dark .table tbody .actions button.secondary svg{color: #fff !important;}
+
+body.dark .table tbody .actions button.success{background-color: #27bf68 !important;}
+body.dark .table tbody .actions button.success svg{color: #fff !important;}
+
+body.dark .table tbody .actions button.error{background-color: #ff6179 !important;}
+body.dark .table tbody .actions button.error svg{color: #fff !important;}
+
+body.dark .table td{color: rgba(255,255,255,0.5) !important;}
+
+body.dark .table-bordered td, .table-bordered th{border: 1px solid rgba(255,255,255,0.1) !important;}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{background-color: #0858f7 !important;}
+
+body.dark .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root:hover{background: rgba(255,255,255,0.2) !important; color: #fff !important;}   
+
+body.dark .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{color: rgba(255,255,255,0.8) !important;} 
+
+body.dark  .loginSection{background: #112142 !important;}
+body.dark form .form-control{background: #071739 !important; border: 1px solid rgba(255,255,255,0.1) !important; color: rgba(255,255,255,0.7) !important;}
+
+body.dark form .form-control::-webkit-input-placeholder{color: rgba(255,255,255,0.5) !important;}
+
+body.dark .loginSection .loginBox .wrapper .or span.line{background: rgba(255,255,255,0.3) !important;}
+
+body.dark .loginSection .loginBox .wrapper .or span.txt{border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.5) !important;}
+
+body.dark .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{color: rgba(255,255,255,0.7) !important;}
+
+body.dark .css-1c99szj-MuiRating-icon{color:rgba(255,255,255, 0.6) !important;}
+
+body.dark .signUpSection .loginBox{background: #1b2b4d !important;}
+
+body.dark .card{
+    color: rgb(255 255 255 / 80%) !important;
 }

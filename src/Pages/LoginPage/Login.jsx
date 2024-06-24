@@ -38,7 +38,7 @@ const Login = () => {
                         <form action="#">
                             <div className={`form-group position-relative ${inputIndex === 0 && 'focus'}`}>
                                 <span className='icon'><IoMdMail /></span>
-                                <input type="text" placeholder='enter your email' className='form-control' onFocus={() => focusInput(0)} onBlur={() => setInputIndex(null)} />
+                                <input type="text" placeholder='enter your email' className='form-control' onFocus={() => focusInput(0)} onBlur={() => setInputIndex(null)} autoFocus/>
                             </div>
                             <div className={`form-group position-relative ${inputIndex === 1 && 'focus'}`}>
                                 <span className='icon'><RiLockPasswordFill /></span>

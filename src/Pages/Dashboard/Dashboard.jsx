@@ -18,6 +18,7 @@ import { FaPen } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import Pagination from '@mui/material/Pagination';
 import { MyContext } from '../../App';
+import { Link } from 'react-router-dom';
 
 const ITEM_HEIGHT = 48;
 
@@ -40,9 +41,10 @@ export const options = {
 const Dashboard = () => {
   const context = useContext(MyContext)
 
-  useEffect(()=>{
+  useEffect(() => {
     context.setIsHideSidebarAndHeader(false)
-  },[])
+    window.scrollTo(0, 0)
+  }, [])
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [showBy, setShowBy] = React.useState('');
@@ -217,7 +219,9 @@ const Dashboard = () => {
                   <td>Rs.10k</td>
                   <td>
                     <div className="actions d-flex align-items-center">
-                      <Button className='secondary' color='secondary'><FaEye /></Button>
+                      <Link to="/product/details">
+                        <Button className='secondary' color='secondary'><FaEye /></Button>
+                      </Link>
                       <Button className='success' color='success'><FaPen /></Button>
                       <Button className='error' color='error'><MdDelete /></Button>
                     </div>
@@ -537,7 +541,7 @@ const Dashboard = () => {
 
             <div className="d-flex tableFooter">
               <p>Showing <b>12</b> of <b>60</b> results</p>
-              <Pagination count={10} color="primary" className='pagination'showFirstButton showLastButton/>
+              <Pagination count={10} color="primary" className='pagination' showFirstButton showLastButton />
             </div>
           </div>
 
