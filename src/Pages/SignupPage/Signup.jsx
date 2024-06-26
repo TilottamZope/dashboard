@@ -43,7 +43,7 @@ const Signup = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime deserunt rem repellat voluptates, cupiditate recusandae adipisci, consequuntur odit consectetur, quidem quae ut nam enim qui labore voluptas aliquid dolor?</p>
 
                         <div className="w-100 mt-2">
-                            <Link to={'/'}><Button className='btn-blue btn-big btn-lg'> <BiSolidHome/> Go To Home</Button></Link>
+                            <Link to={'/'}><Button className='btn-blue btn-big btn-lg'> <BiSolidHome className='m-2'/> Go To Home</Button></Link>
                         </div>
                     </div>
                     <div className="col-md-4 pr-0">

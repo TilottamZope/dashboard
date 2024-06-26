@@ -20,6 +20,7 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import { GrPowerReset } from "react-icons/gr";
 import Logout from '@mui/icons-material/Logout';
 import { MyContext } from '../../App';
+import UserAvtarImg from '../UserAvtarImg/UserAvtarImg';
 
 
 const Header = () => {
@@ -217,11 +218,7 @@ const Header = () => {
                                 context.isLogin !== true ? <Link to="/login"><Button className='btn-blue btn-lg btn-round'>Sign In</Button></Link> :
                                     <div className="myAccWrraper">
                                         <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
-                                            <div className="userImg">
-                                                <span className="rounded-circle">
-                                                    <img src={Profile} alt="Profile Not Found" />
-                                                </span>
-                                            </div>
+                                            <UserAvtarImg   img={Profile} alt="Profile Not Found"/>
                                             <div className="userInfo">
                                                 <h4>Tilottam Zope</h4>
                                                 <p className='mb-0'>@tilottam21</p>
