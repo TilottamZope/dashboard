@@ -320,34 +320,39 @@ h1, h2, h3, h4, h5, h6, p {color: #201f2f;}
 .sliderSml .slick-current .item{border: 1px dash rgb(128, 128, 128)ccc !important;}
 
 .sliderSml .slick-slide{padding-right:10px;}
+
 .sliderSml .slick-slide .item{border-radius: 7px !important; overflow: hidden;}
 
 .sliderSml *,.sliderBig *{transition: all 0.2s !important;}
+
 .sliderBig .item{overflow: hidden; border-radius: 7px; border: 2px dashed #ccc !important;}
-.sliderSml .item{overflow: hidden; border-radius: 7px; border: 2px dashed #ccc !important;
-cursor: pointer;}
+
+.sliderSml .item{overflow: hidden; border-radius: 7px; border: 2px dashed #ccc !important; cursor: pointer;}
 
 h4{line-height: 32px;}
 
 .productDetailsSection .productInfo .icon{width: 28%; flex: 0 0 28%;}
+
 body.light .productDetailsSection .productInfo .icon svg{color: #5e5d72 !important;}
+
 .productDetailsSection .productInfo .icon svg{font-size: 22px;}
-.productDetailsSection .productInfo .name{width: 72%; flex: 0 0 72%; font-weight: 600;
-font-size: 15px; color: rgba(255,255,255,0.8) !important;}
+
+.productDetailsSection .productInfo .name{width: 72%; flex: 0 0 72%; font-weight: 600; font-size: 15px; color: rgba(255,255,255,0.8) !important;}
 
 body.light .productDetailsSection .productInfo .name{color: #5e5d72 !important;}
 
 .productDetailsSection .productInfo .row{margin-bottom: 15px !important;}
+
 .productDetailsSection .productInfo .row .col-sm-9{display: flex; align-items: center;}
-.productDetailsSection .productInfo .row .col-sm-9 span{ opacity: 0.8; font-size: 15px;
-padding-left: 20px;}
+
+.productDetailsSection .productInfo .row .col-sm-9 span{ opacity: 0.8; font-size: 15px; padding-left: 20px;}
 
 
 .productDetailsSection .productInfo .row .col-sm-9 span .row{margin-bottom: 0px !important;}
 
 .tags{ margin-bottom:0px !important; padding-left: 8px;}
-.tags li span{ display: flex; align-items: center; justify-content: center; background: #121d37 !important; border-radius: 5px !important; font-size: 12px !important; padding: 3px 10px !important;}
 
+.tags li span{ display: flex; align-items: center; justify-content: center; background: #121d37 !important; border-radius: 5px !important; font-size: 12px !important; padding: 3px 10px !important;}
 
 .tags li{margin: 3px 5px !important;}
 
@@ -356,22 +361,27 @@ body.light .tags li span{background: #d8d8d8 !important; color: #000 !important;
 p{font-weight: 300; font-size: 15px; line-height: 25px;}
 
 .ratingSection{width: 500px;}
+
 .ratingSection .ratingrow{width: 100%; margin-bottom: 15px !important;}
+
 .ratingSection .ratingrow .progress{height: 5px !important; background-color: #000 !important;}
+
 .ratingSection .ratingrow .progress .progress-bar{background: #edb213 !important;}
 
 body.light .ratingSection .ratingrow .progress{background: #ccc !important;}
 
 .ratingSection .ratingrow .col1{width: 15%; flex: 0 0 15%; display: flex;}
+
 .ratingSection .ratingrow .col2{width: 50%; flex: 0 0 50%;}
+
 .ratingSection .ratingrow .col3{width: 25%; flex: 0 0 25%; display: flex; padding-left: 20px;}
 
 .userImg.lg{  width: 60px !important; height: 60px !important; }
 
-
 .userInfo h6{margin-bottom: 0px;}
 
 .reviewsSection{width: 100%; display: flex; flex-direction: column;}
+
 .reviewsSection .reviewsRow{width: 100%; height: auto; background: #071739; padding: 35px; border-radius: 10px; margin: 15px 0px;}
 
 body.light .reviewsSection .reviewsRow{background: #ededed !important;}
@@ -385,6 +395,7 @@ body.light .reviewsSection .reviewsRow{background: #ededed !important;}
 .reviewsSection .reviewsRow .btn-big svg{font-size: 18px !important;}
 
 .reviewForm{width: 100%;}
+
 .reviewForm textarea{width: 100%; height: 200px; background: #132345  !important; outline: navajowhite !important; padding: 15px; border-radius: 10px; color: rgba(255,255,255,0.7);
 border: 1px solid #0d1a36 !important;}
 
@@ -392,12 +403,15 @@ body.light .reviewForm textarea{background: #f4f4f4  !important; color: rgba(0,0
   !important;}
 
 .reviewForm textarea::-webkit-input-placeholder{color: rgba(255,255,255,0.5);}
+
 body.light .reviewForm textarea::-webkit-input-placeholder{color: rgba(0,0,0,0.5);}
 
 body.dark .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{background: #2b3c5f !important;}
 
 .form .form-group{margin-bottom: 25px;}
+
 .form .form-group h6{margin-bottom: 10px; font-size: 13px;}
+
 .form .form-group input,.form .form-group textarea{background: #fafafa; width: 100%; outline: none !important; border: 1px solid rgba(0,0,0,0.2) !important; height: 55px; padding-left: 15px; border-radius: 5px; font-size: 14px;}
 
 .form .form-group input:hover,.form .form-group textarea:hover{border: 1px solid rgba(0,0,0,0.3) !important;}
@@ -405,7 +419,6 @@ body.dark .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{background: #
 .form .form-group textarea{height: 120px; padding-top: 15px;}
 
 body.dark .form .form-group input,body.dark .form .form-group textarea{background: #2b3c5f  !important; border: 1px solid #253557 !important; color: rgba(255,255,255,0.8) !important;}
-
 
 .dot{display:block; width: 20px; height: 20px; border-radius: 100%;}
 .editModal .css-1t1j96h-MuiPaper-root-MuiDialog-paper{width: 600px !important;}
@@ -415,8 +428,112 @@ body.dark .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root, body.dark .css-1t8l
 form .form-group h6{font-weight: 600;}
 
 .stickyBox{position: sticky; top: 90px;}
+
 .stickyBox h4{font-size: 22px;  opacity: 1;}
 
+.imgGrid{width: 100%; flex-wrap: wrap; gap:10px; }
+
+.imgGrid .img{width: 47%; height: 100px; overflow: hidden; border-radius: 7px;}
+
+.imgGrid .img img{width: 100%; height:100%; object-fit: cover;}
+
+.inputBtn button{position: absolute; top: 7px; right: 10px; z-index: 100;}
+
+.imgUploadBox{width: 100%; flex-wrap: nowrap; gap: 10px;}
+
+.imgUploadBox .uploadBox{width: 150px; height: 150px !important; padding: 0px; border-radius: 10px; border: 1px dashed  rgba(0,0,0,0.3); position:relative ; display: flex; align-items: center; justify-content: center; cursor: pointer; background: #fafafa; transition: all 0.3s;}
+ 
+.imgUploadBox .uploadBox .box{width: 100%; height: 150px !important; overflow: hidden; border-radius: 7px;}
+
+.imgUploadBox .uploadBox .box .lazy-load-image-background{height: 100% !important; width: 100% !important;}
+
+.imgUploadBox .uploadBox .progressBar .MuiCircularProgress-root{width: 30px !important; height: 30px !important;}
+
+.imgUploadBox .uploadBox .progressBar span{font-size: 14px;}
+
+body.dark .imgUploadBox .uploadBox{background: #2b3c5f   ;}
+
+body.dark .imgUploadBox .uploadBox *{color: rgba(255,255,255,0.7) !important;}
+
+.imgUploadBox .uploadBox .remove{position: absolute; top: -7px; right: -7px; display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; background: #d32f2f; border-radius: 50%; cursor: pointer; z-index: 100;}
+
+.imgUploadBox .uploadBox .remove svg{font-size: 18px; color: #fff;}
+
+.imgUploadBox .uploadBox .MuiBox-root{position: absolute; }
+
+.imgUploadBox .uploadBox:hover{background: #f1f1f1;}
+
+body.dark .imgUploadBox .uploadBox{border: 1px dashed  rgba(255,255,255,0.2);}
+
+.imgUploadBox .uploadBox img{height: 100%; object-fit: cover;}
+
+.imgUploadBox .uploadBox input{position: absolute; width: 100%; height: 100%; opacity: 0;}
+
+.imgUploadBox .uploadBox .info{display: flex; align-items: center; justify-content: center; flex-direction: column; pointer-events: none;} 
+
+.imgUploadBox .uploadBox .info svg{font-size: 50px; opacity: 0.2;}
+
+.imgUploadBox .uploadBox .info h5{font-size: 15px; text-align: center; opacity: 0.5;}
+
+button.notAllow{cursor: no-drop !important;}
+
+form .btn-blue{position: relative; z-index: 100;}
+
+.badge{ padding: 4px; font-size: 13px; font-weight: 400;}
+
+button .MuiCircularProgress-root{width: 30px !important; height: 30px !important;}
+
+body.dark button svg{color: #fff !important;}
+
+.productModal .actions button{opacity:  1 !important;}
+
+.productModal .actions button svg.text-danger{color: #ed174a  !important; opacity: 1 !important;}
+
+.productModal .MuiPaper-elevation{ padding: 25px; position: relative; max-width: 900px !important; width: 900px !important;}
+
+.productModal h4{font-size: 20px !important; color: rgba(0,0,0,0.8) !important;}
+
+.close_{position: absolute !important; top: 10px; right: 10px; color: #000 !important; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important; background: #f1f1f1 !important;}
+
+.close_ svg{font-size: 22px; color: #000 !important; opacity: 0.7;}
+
+body.dark .close_ svg{font-size: 22px; color: #000 !important; opacity: 0.7;}
+
+.orderTable th,.orderTable td{white-space: nowrap;}
+
+.orderTable .img{width: 70px; height: 40px; overflow: hidden;}
+
+.orderTable .img img{width: 100%;}
+
+.cursor{cursor: pointer;}
+
+.productZoom{ width: 100%; height: auto;  padding: 0px; overflow: hidden; border-radius: 15px;}
+
+.productZoom .badge{position: absolute; top: 20px; left: 20px; z-index: 100;}
+
+.zoomSliderBig{width: 100% !important;}
+
+.productZoomBig{height: 350px; overflow: hidden;}
+
+.productDetails .productZoomBig{height: 350px !important;}
+
+.zoomSlider{padding-top: 30px;}
+
+.zoomSlider *{outline: none !important;}
+
+.zoomSlider .item{border: 2px solid transparent !important; overflow: hidden; border-radius: 8px; cursor: pointer; height: 70px !important;}
+
+.zoomSlider .item_active{border: 2px solid rgba(0,0,0,0.3) !important; }
+
+.zoomSlider .item img{height: 100%; object-fit: cover;}
+
+.zoomSlider .swiper-button-prev{width: 30px !important; height: 30px !important; top: 60% !important; left: -3% !important;}
+
+.zoomSlider .swiper-button-next{width: 30px !important; height: 30px !important; top: 60% !important; right: -3% !important;}
+
+.zoomSlider .swiper-slide .item{opacity: 0.5;}
+
+.zoomSlider .swiper-slide .item_active{opacity: 1 !important;}
 /* *************************************************************************************************************************** */
 
 /* *****************************************************Dark Mode Section***************************************************** */
