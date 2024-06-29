@@ -6,7 +6,7 @@ import { MdMenuOpen } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
 import Searchbox from '../Searchbox/Searchbox';
 import { MdOutlineLightMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { MdOutlineMail } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa";
@@ -64,7 +64,11 @@ const Header = () => {
                             <Searchbox />
                         </div>
                         <div className="col-sm-7 d-flex align-items-center justify-content-end part3">
-                            <Button className='rounded-circle me-3' onClick={()=>context.setThemeMode(!context.themeMode)}><MdOutlineLightMode /></Button>
+                            <Button className='rounded-circle me-3' onClick={() => context.setThemeMode(!context.themeMode)}>
+                                {
+                                    context.themeMode === false ? <MdOutlineLightMode /> : <MdOutlineDarkMode />
+                                }
+                            </Button>
                             <Button className='rounded-circle me-3'><MdOutlineShoppingCart /></Button>
 
                             <Button className='rounded-circle me-3'><MdOutlineMail /></Button>
@@ -218,7 +222,7 @@ const Header = () => {
                                 context.isLogin !== true ? <Link to="/login"><Button className='btn-blue btn-lg btn-round'>Sign In</Button></Link> :
                                     <div className="myAccWrraper">
                                         <Button className="myAcc d-flex align-items-center" onClick={handleOpenMyAccDrop}>
-                                            <UserAvtarImg   img={Profile} alt="Profile Not Found"/>
+                                            <UserAvtarImg img={Profile} alt="Profile Not Found" />
                                             <div className="userInfo">
                                                 <h4>Tilottam Zope</h4>
                                                 <p className='mb-0'>@tilottam21</p>
