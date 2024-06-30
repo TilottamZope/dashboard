@@ -20,6 +20,7 @@ import Profile from '../../Assets/Images/Profile.jpg'
 import Rating from '@mui/material/Rating';
 import { Button } from '@mui/material';
 import { FaReply } from "react-icons/fa";
+import { BsCurrencyRupee } from "react-icons/bs";
 
 
 const StyledBreadcrumb = styled(Chip)(({ theme }) => {
@@ -202,7 +203,7 @@ const ProductDetails = () => {
                                             <span className='name'>Price</span>
                                         </div>
                                         <div className="col-sm-9">
-                                            :    <span>Rs.100</span>
+                                            :    <span><BsCurrencyRupee />100</span>
                                         </div>
                                     </div>
                                     <div className="row mb-2">

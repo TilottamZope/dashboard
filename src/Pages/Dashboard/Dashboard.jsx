@@ -19,6 +19,7 @@ import { MdDelete } from "react-icons/md";
 import Pagination from '@mui/material/Pagination';
 import { MyContext } from '../../App';
 import { Link } from 'react-router-dom';
+import { BsCurrencyRupee } from "react-icons/bs";
 
 const ITEM_HEIGHT = 48;
 
@@ -106,8 +107,8 @@ const Dashboard = () => {
                 </div>
 
               </div>
-              <h3 className='text-white align-items-center w-100 bottomEle'>Rs.100,000.99</h3>
-              <p>Rs.90,000.90 in Last Month</p>
+              <h3 className='text-white align-items-center w-100 bottomEle'><BsCurrencyRupee />100,000.99</h3>
+              <p><BsCurrencyRupee />90,000.90 in Last Month</p>
 
               <Chart
                 chartType="PieChart"
@@ -209,14 +210,14 @@ const Dashboard = () => {
                   <td>newbrand</td>
                   <td>
                     <div style={{ width: '70px' }}>
-                      <del className='old'>Rs.100.00</del>
-                      <span className='new text-danger'>Rs.80.00</span>
+                      <del className='old'><BsCurrencyRupee />100.00</del>
+                      <span className='new text-danger'><BsCurrencyRupee />80.00</span>
                     </div>
                   </td>
                   <td>30</td>
                   <td>4.9(16)</td>
                   <td>100</td>
-                  <td>Rs.10k</td>
+                  <td><BsCurrencyRupee/>10k</td>
                   <td>
                     <div className="actions d-flex align-items-center">
                       <Link to="/product/details">
@@ -255,14 +256,14 @@ const Dashboard = () => {
                   <td>newbrand</td>
                   <td>
                     <div style={{ width: '70px' }}>
-                      <del className='old'>Rs.100.00</del>
-                      <span className='new text-danger'>Rs.80.00</span>
+                      <del className='old'><BsCurrencyRupee />100.00</del>
+                      <span className='new text-danger'><BsCurrencyRupee />80.00</span>
                     </div>
                   </td>
                   <td>30</td>
                   <td>4.9(16)</td>
                   <td>100</td>
-                  <td>Rs.10k</td>
+                  <td><BsCurrencyRupee />10k</td>
                   <td>
                     <div className="actions d-flex align-items-center">
                       <Button className='secondary' color='secondary'><FaEye /></Button>
