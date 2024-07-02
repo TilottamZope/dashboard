@@ -281,7 +281,6 @@ const ProductDetails = () => {
                                 <span className="col3">
                                     (20)
                                 </span>
-
                             </div>
                             <div className="ratingrow d-flex align-items-center">
                                 <span className="col1">
